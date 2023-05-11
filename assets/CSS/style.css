@@ -118,11 +118,17 @@ menu a {
     flex-direction: column;
 }
 
-#musique img {
+.profil {
     height: 50vh;
     width: 25vw;
     object-fit: cover;
     margin-right: 10vw;
+    transition: .3s ease-in-out;
+}
+
+.profil:hover {
+	transform: scale(1.1);
+	transition: .3s ease-in-out;
 }
 
 #musique p {
@@ -155,7 +161,7 @@ menu {
 }
 
 #vitalic {
-    color: white;
+    color: black;
 }
 
 .artist a {
@@ -163,8 +169,19 @@ menu {
     padding: 10px 25px;
     border-radius: 5px;
     color: white;
-    width: 80px;
+    width: 90px;
     text-align: center;
+    display: flex;
+}
+
+.artist a:hover {
+    background-color: black;
+}
+
+.play {
+    width: 12px;
+    height: auto;
+    margin-right: 10px;
 }
 
 .form {
